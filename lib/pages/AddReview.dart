@@ -125,7 +125,7 @@ class Register extends StatelessWidget {
         Text(
           "ADD REVIEWS",
           style: TextStyle(
-              fontSize: 80, fontWeight: FontWeight.bold, color: Colors.white),
+              fontSize: 90, fontWeight: FontWeight.bold, color: Colors.white),
         ),
       ],
     );
