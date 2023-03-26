@@ -91,6 +91,12 @@ class Register extends StatelessWidget {
             "Upload",
             style: TextStyle(fontSize: 20),
           ),
+           TextButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => SearchPage()));
+            },
+          )
           style: ElevatedButton.styleFrom(
             shape: StadiumBorder(),
             padding: EdgeInsets.symmetric(vertical: 16),
