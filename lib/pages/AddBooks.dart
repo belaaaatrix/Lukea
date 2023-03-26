@@ -78,7 +78,7 @@ class Register extends StatelessWidget {
           onPressed: () {},
           child: Text(
             "choose image",
-            style: TextStyle(fontSize: 12),
+            style: TextStyle(fontSize: 10),
           ),
           style: ElevatedButton.styleFrom(
             shape: StadiumBorder(),
