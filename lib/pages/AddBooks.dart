@@ -84,19 +84,17 @@ class Register extends StatelessWidget {
             shape: StadiumBorder(),
             padding: EdgeInsets.symmetric(vertical: 16),
           ),
-        )
+        ),
         ElevatedButton(
-          onPressed: () {},
           child: Text(
             "Upload",
             style: TextStyle(fontSize: 20),
           ),
-           TextButton(
             onPressed: () {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => SearchPage()));
             },
-          )
+          
           style: ElevatedButton.styleFrom(
             shape: StadiumBorder(),
             padding: EdgeInsets.symmetric(vertical: 16),
