@@ -1,5 +1,6 @@
 import 'package:cobak/main.dart';
 import 'package:cobak/pages/LoginPage.dart';
+import 'package:cobak/widget/NavBar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:cobak/pages/SearchPage.dart';
@@ -88,12 +89,13 @@ class Register extends StatelessWidget {
         ElevatedButton(
           onPressed: () {},
           child: Text(
-            "Login",
+            "Register",
             style: TextStyle(fontSize: 20),
           ),
           style: ElevatedButton.styleFrom(
             shape: StadiumBorder(),
             padding: EdgeInsets.symmetric(vertical: 16),
+            backgroundColor: Color(0xFFE69316),
           ),
         )
       ],
@@ -111,9 +113,9 @@ class Register extends StatelessWidget {
       TextButton(
           onPressed: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => LoginPage()));
+                context, MaterialPageRoute(builder: (context) => NavBar()));
           },
-          child: Text("Login", style: TextStyle(fontSize: 15)))
+          child: Text("Login", style: TextStyle(fontSize: 15, color: Color(0xFFE69316))))
     ]);
   }
 }

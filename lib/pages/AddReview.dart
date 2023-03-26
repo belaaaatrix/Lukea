@@ -75,7 +75,7 @@ class AddReview extends StatelessWidget {
                             MaterialPageRoute(
                                 builder: (context) => SearchPage()));
                       },
-                      color: Colors.blueGrey[400],
+                      color: Color(0xFFE69316),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(40)),
                       child: Text(

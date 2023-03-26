@@ -89,6 +89,7 @@ class LoginPage extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             shape: StadiumBorder(),
             padding: EdgeInsets.symmetric(vertical: 16),
+            backgroundColor: Color(0xFFE69316)
           ),
         )
       ],
@@ -96,7 +97,12 @@ class LoginPage extends StatelessWidget {
   }
 
   _forgotPassword(context) {
-    return TextButton(onPressed: () {}, child: Text("Forgot password?"));
+    return TextButton(
+        onPressed: () {},
+        child: Text(
+          "Forgot password?",
+          style: TextStyle(color: Color(0xFFE69316)),
+        ));
   }
 
   _signup(context) {
@@ -110,7 +116,7 @@ class LoginPage extends StatelessWidget {
                   context, MaterialPageRoute(builder: (context) => Register()));
             },
             child: Text(
-              "Sign Up",
+              "Sign Up", style: TextStyle(color: Color(0xFFE69316)),
             ))
       ],
     );
