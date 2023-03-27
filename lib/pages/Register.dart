@@ -115,7 +115,8 @@ class Register extends StatelessWidget {
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => NavBar()));
           },
-          child: Text("Login", style: TextStyle(fontSize: 15, color: Color(0xFFE69316))))
+          child: Text("Login",
+              style: TextStyle(fontSize: 15, color: Color(0xFFE69316))))
     ]);
   }
 }

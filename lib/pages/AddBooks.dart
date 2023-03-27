@@ -40,35 +40,46 @@ class Register extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        TextField(
-          decoration: InputDecoration(
-              hintText: "What’s the books title ?",
-              hintStyle: TextStyle(color: Colors.white),
-              border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(18),
-                  borderSide: BorderSide.none),
-              fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
-              filled: true,
-              prefixIcon: Icon(Icons.person, color: Colors.white)),
+        Text(
+          "Whats the books title ?",
+          style: TextStyle(fontSize: 20),
         ),
-        SizedBox(height: 10),
         TextField(
           decoration: InputDecoration(
-            hintText: "Who’s the books writer ?",
+            hintText: "books title ?",
             hintStyle: TextStyle(color: Colors.white),
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(18),
                 borderSide: BorderSide.none),
             fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
             filled: true,
-            prefixIcon: Icon(Icons.person, color: Colors.white),
+          ),
+        ),
+        SizedBox(height: 10),
+        Text(
+          "Whos the books writer ?",
+          style: TextStyle(fontSize: 20),
+        ),
+        TextField(
+          decoration: InputDecoration(
+            hintText: "writers name ?",
+            hintStyle: TextStyle(color: Colors.white),
+            border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(18),
+                borderSide: BorderSide.none),
+            fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
+            filled: true,
           ),
           obscureText: true,
         ),
         SizedBox(height: 10),
+        Text(
+          "Insert the picture of the books cover",
+          style: TextStyle(fontSize: 20),
+        ),
         TextField(
           decoration: InputDecoration(
-            hintText: "Insert the picture of the books cover ",
+            hintText: "choose picture ",
             hintStyle: TextStyle(color: Colors.white),
           ),
           obscureText: true,
@@ -90,11 +101,10 @@ class Register extends StatelessWidget {
             "Upload",
             style: TextStyle(fontSize: 20),
           ),
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => SearchPage()));
-            },
-          
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => SearchPage()));
+          },
           style: ElevatedButton.styleFrom(
             shape: StadiumBorder(),
             padding: EdgeInsets.symmetric(vertical: 16),

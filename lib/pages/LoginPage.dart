@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:cobak/pages/SearchPage.dart';
 import 'package:cobak/pages/Register.dart';
+import 'package:cobak/pages/AddReview.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -80,17 +81,16 @@ class LoginPage extends StatelessWidget {
         ElevatedButton(
           onPressed: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => NavBar()));
+                context, MaterialPageRoute(builder: (context) => AddReview()));
           },
           child: Text(
             "Login",
             style: TextStyle(fontSize: 20),
           ),
           style: ElevatedButton.styleFrom(
-            shape: StadiumBorder(),
-            padding: EdgeInsets.symmetric(vertical: 16),
-            backgroundColor: Color(0xFFE69316)
-          ),
+              shape: StadiumBorder(),
+              padding: EdgeInsets.symmetric(vertical: 16),
+              backgroundColor: Color(0xFFE69316)),
         )
       ],
     );
@@ -112,11 +112,12 @@ class LoginPage extends StatelessWidget {
         Text("Dont have an account?", style: TextStyle(color: Colors.white)),
         TextButton(
             onPressed: () {
-              Navigator.push(
+              Navigator.pop(
                   context, MaterialPageRoute(builder: (context) => Register()));
             },
             child: Text(
-              "Sign Up", style: TextStyle(color: Color(0xFFE69316)),
+              "Sign Up",
+              style: TextStyle(color: Color(0xFFE69316)),
             ))
       ],
     );

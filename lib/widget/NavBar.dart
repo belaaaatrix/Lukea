@@ -1,4 +1,3 @@
-import 'package:cobak/pages/AddReview.dart';
 import 'package:cobak/pages/LoginPage.dart';
 import 'package:cobak/pages/ProfilePage.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -7,7 +6,10 @@ import 'package:cobak/pages/SearchPage.dart';
 
 class NavBar extends StatefulWidget {
   int currentIndex = 1;
-  List pages = [LoginPage(), SearchPage(), ProfilePage()];
+  List pages = [
+    LoginPage(),
+    SearchPage(), 
+    ProfilePage()];
 
   NavBar({super.key});
 

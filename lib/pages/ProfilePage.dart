@@ -54,7 +54,7 @@ class ProfilePage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical: 8, horizontal: 125),
                   backgroundColor: Color(0xFFE69316)),
             ),
-             ElevatedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => NavBar()));
