@@ -39,9 +39,12 @@ class Product extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Batu Halus",
+                    "Normal People",
                     style: GoogleFonts.montserrat(
-                        fontWeight: FontWeight.w700, fontSize: 16),
+                        fontWeight: FontWeight.w700, 
+                        fontSize: 16,
+                        color: Color(0xFFE69316)),
+                        
                   ),
                   const SizedBox(
                     height: 5,
@@ -50,7 +53,7 @@ class Product extends StatelessWidget {
                     width: 180,
                     height: 50,
                     child: Text(
-                      "Digunakan untuk membangun bangunan seperti rumah",
+                      "Lorem Ipsung Dolot Sit Amet Lorem Ipsung Dolot Sit Amet",
                       style: GoogleFonts.openSans(
                           fontWeight: FontWeight.w600,
                           height: 1,
@@ -64,14 +67,14 @@ class Product extends StatelessWidget {
                     height: 35,
                     child: TextButton(
                         style: TextButton.styleFrom(
-                            backgroundColor: Colors.black,
+                            backgroundColor: Color (0xFFE69316),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(24))),
                         onPressed: () {},
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(2, 2, 2, 2),
                           child: Text(
-                            'Learn More',
+                            'Reviews',
                             style: GoogleFonts.openSans(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w600,

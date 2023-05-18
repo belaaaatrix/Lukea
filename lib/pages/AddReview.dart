@@ -30,7 +30,7 @@ class AddReview extends StatelessWidget {
         Text(
           "ADD REVIEWS",
           style: TextStyle(
-              fontSize: 90, fontWeight: FontWeight.bold, color: Colors.white),
+              fontSize: 60, fontWeight: FontWeight.bold, color: Colors.white),
         ),
       ],
     );
@@ -49,7 +49,7 @@ class AddReview extends StatelessWidget {
                   borderSide: BorderSide.none),
               fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
               filled: true,
-              prefixIcon: Icon(Icons.person, color: Colors.white)),
+              ),
         ),
         SizedBox(height: 10),
         TextField(
@@ -61,7 +61,6 @@ class AddReview extends StatelessWidget {
                 borderSide: BorderSide.none),
             fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
             filled: true,
-            prefixIcon: Icon(Icons.person, color: Colors.white),
           ),
           obscureText: true,
         ),
@@ -75,7 +74,6 @@ class AddReview extends StatelessWidget {
                 borderSide: BorderSide.none),
             fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
             filled: true,
-            prefixIcon: Icon(Icons.person, color: Colors.white),
           ),
           obscureText: true,
         ),
@@ -84,8 +82,12 @@ class AddReview extends StatelessWidget {
           onPressed: () {},
           child: Text(
             "Upload",
-            style: TextStyle(fontSize: 20),
-          ),
+            style: TextStyle(fontSize: 20 ),
+             ),
+             style: ElevatedButton.styleFrom(
+                  shape: StadiumBorder(),
+                  padding: EdgeInsets.symmetric(vertical: 8, horizontal: 140),
+                  backgroundColor: Color(0xFFE69316)),
         ),
       ],
     );
